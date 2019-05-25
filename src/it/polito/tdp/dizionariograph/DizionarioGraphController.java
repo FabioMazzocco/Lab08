@@ -52,8 +52,10 @@ public class DizionarioGraphController {
     	try {
     		String lettere = txtLettere.getText();
     		numLettere = Integer.parseInt(lettere);
+    		//da chiamare il model
     	}catch(NumberFormatException e) {
-    		txtResult
+    		txtResult.appendText("Inserisci un numero di lettere valido");
+    		return;
     	}
     }
 
